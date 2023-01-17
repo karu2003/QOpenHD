@@ -59,6 +59,8 @@ jobs:
               cd build
               qmake CONFIG+=debug ..\QOpenHD.pro
               ..\jom\jom -j2
+              ls -a
+              
 
               
               
