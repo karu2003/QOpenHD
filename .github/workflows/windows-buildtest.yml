@@ -57,7 +57,7 @@ jobs:
               rm -rf build
               mkdir build
               cd build
-              qmake ..\QOpenHD.pro
+              qmake CONFIG+=debug ..\QOpenHD.pro
               ..\jom\jom -j2
 
               
