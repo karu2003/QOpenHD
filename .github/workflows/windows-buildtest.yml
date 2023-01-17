@@ -53,7 +53,7 @@ jobs:
               rm -rf build
               mkdir build
               cd build
-              qmake ..
+              qmake ../QOpenHD.pro
               ..\jom\jom -j2
 
               
