@@ -50,6 +50,9 @@ jobs:
       - uses: ilammy/msvc-dev-cmd@v1
       - name: Build
         run:  |
+              curl.exe --output mavsdk-windows-x64-release.zip --url https://github.com/OpenHD/MAVSDK/releases/download/debug-win-mavsdk/mavsdk-windows-x64-release.zip
+              mkdir C:\MAVSDK
+              unzip mavsdk-windows-x64-release.zip -d C:\MAVSDK
               ls -a
               rm -rf build
               mkdir build
