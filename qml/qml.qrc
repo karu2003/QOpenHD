@@ -35,7 +35,6 @@
         <file>ui/delegates/NumberSettingDelegate.ui.qml</file>
         <file>ui/delegates/ChoiceSettingDelegate.ui.qml</file>
         <file>ui/delegates/RangeSettingDelegate.ui.qml</file>
-        <file>ui/widgets/MessageHUDForm.ui.qml</file>
         <file>ui/widgets/MessageHUD.qml</file>
         <file>LICENSE_UI.txt</file>
         <file>ui/widgets/LinkDownRSSIWidget.qml</file>
@@ -209,7 +208,6 @@
         <file>ui/widgets/MapWidgetForm.ui.qml</file>
         <file>ui/elements/MapComponent.qml</file>
         <file>ui/configpopup/RcInfoPanel.qml</file>
-        <file>ui/configpopup/ConfigPopup.qml</file>
         <file>resources/master1.png</file>
         <file>resources/master2.png</file>
         <file>resources/master3.png</file>
