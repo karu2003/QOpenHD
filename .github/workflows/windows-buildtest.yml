@@ -49,6 +49,7 @@ jobs:
 
       - name: Build
         run:  |
+              ls -a
               rm -rf build
               mkdir build
               cd build
