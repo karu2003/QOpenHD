@@ -52,23 +52,23 @@ jobs:
         run:  |
               curl.exe --output mavsdk-windows-x64-release.zip --url https://openhdfpv.org/wp-content/Downloader/mavsdk-windows-x64-release.zip
               mkdir -p win/MAVSDK
-              unzip mavsdk-windows-x64-release.zip -d win/MAVSDK
+              unzip mavsdk-windows-x64-release_r.zip -d win/MAVSDK
               ls -a
               ls -a win/MAVSDK
               rm -rf build
               mkdir build
               cd build
-              qmake CONFIG+=debug ..\QOpenHD.pro
+              qmake CONFIG+=release ..\QOpenHD.pro
               ..\jom\jom -j2
               ls -a
               cd release
               ls -a
-              cd ../debug
+              cd ../release
               ls -a
               cd ../
-              7z a -r debug
+              7z a -r release
               ls -a
-              mv debug.7z ../
+              mv release.7z ../
               ls -a ../
 
 
