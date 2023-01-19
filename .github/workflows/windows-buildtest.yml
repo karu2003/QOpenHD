@@ -63,6 +63,8 @@ jobs:
               ls -a
               cd release
               ls -a
+              cd ../debug
+              ls -a
 
               
               
