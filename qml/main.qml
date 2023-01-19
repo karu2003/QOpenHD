@@ -147,7 +147,8 @@ ApplicationWindow {
         anchors.centerIn: parent
         cardName: qsTr("QOpenHD")
         cardNameColor: "black"
-        visible: _messageBoxInstance.show_to_user
+        //visible: _messageBoxInstance.show_to_user
+        visible:false
         cardBody: Column {
             height: 200
             width: 320
