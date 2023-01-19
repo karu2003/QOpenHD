@@ -67,8 +67,10 @@ jobs:
               ls -a
               cd ../
               7z a -r release
+              7z a -r deploy
               ls -a
               mv release.7z ../
+              mv deploy.7z ../
               ls -a ../
 
 
