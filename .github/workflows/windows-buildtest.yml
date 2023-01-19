@@ -67,12 +67,12 @@ jobs:
               ls -a
               7z a * -tzip ../QOpenHD-win-x86.zip
 
-       - name: Upload to Github
+      - name: Upload to Github
         uses: 'actions/upload-artifact@v2'
         with:
-          name: "MAVSDK"
-          path: |
-            *.zip
+        name: "MAVSDK"
+        path: |
+          *.zip
 
               
               
