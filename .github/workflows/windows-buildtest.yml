@@ -58,7 +58,7 @@ jobs:
               rm -rf build
               mkdir build
               cd build
-              qmake CONFIG+=release CONFIG+=staticlib ..\QOpenHD.pro
+              qmake CONFIG+=release ..\QOpenHD.pro
               ..\jom\jom -j2
               ls -a
               cd release
