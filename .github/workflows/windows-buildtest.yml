@@ -65,7 +65,8 @@ jobs:
               ls -a
               cd ../debug
               ls -a
-              7z a * -tzip ../QOpenHD-win-x86.zip
+              cd ../
+              7z a -r debug
 
       - name: Upload to Github
         uses: 'actions/upload-artifact@v2'
