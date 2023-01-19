@@ -58,8 +58,7 @@ jobs:
               rm -rf build
               mkdir build
               cd build
-              configure -developer-build -opensource -nomake examples -nomake tests -static
-              qmake CONFIG+=release ..\QOpenHD.pro
+              qmake CONFIG+=release CONFIG +=staticlib ..\QOpenHD.pro
               ..\jom\jom -j2
               ls -a
               cd release
