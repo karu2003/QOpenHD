@@ -67,11 +67,15 @@ jobs:
               ls -a
               cd ../
               7z a -r debug
+              ls -a
+              echo $(pwd)
+              rm MAVSDK.zip
+              rm jom.zip
 
       - name: Upload to Github
         uses: 'actions/upload-artifact@v2'
         with:
-          name: "MAVSDK"
+          name: "QOpenHD"
           path: |
             *.zip
 
