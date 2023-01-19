@@ -54,6 +54,7 @@ jobs:
               mkdir -p win/MAVSDK
               unzip mavsdk-windows-x64-release.zip -d win/MAVSDK
               ls -a
+              ls -a win/MAVSDK
               rm -rf build
               mkdir build
               cd build
