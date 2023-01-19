@@ -51,8 +51,8 @@ jobs:
       - name: Build
         run:  |
               curl.exe --output mavsdk-windows-x64-release.zip --url https://openhdfpv.org/wp-content/Downloader/mavsdk-windows-x64-release.zip
-              mkdir C:\MAVSDK
-              unzip mavsdk-windows-x64-release.zip -d C:\MAVSDK
+              mkdir -p win/MAVSDK
+              unzip mavsdk-windows-x64-release.zip -d win/MAVSDK
               ls -a
               rm -rf build
               mkdir build

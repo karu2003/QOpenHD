@@ -11,6 +11,7 @@ gstreamer-*
 mac/include
 mac/lib
 mac/share
+win/MAVSDK
 cov-int
 debug
 .builder_version

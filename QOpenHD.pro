@@ -326,10 +326,10 @@ DEPENDPATH += $$PWD/mavsdk/include
 
 unix:!macx: PRE_TARGETDEPS += $$PWD/mavsdk/lib/libmavsdk.a
 
-win32: LIBS += -L$$PWD/../../../../../MAVSDK/lib/ -lmavsdk
+win32: LIBS += -L$$PWD/win/MAVSDK/lib/ -lmavsdk
 
-INCLUDEPATH += $$PWD/../../../../../MAVSDK/include
-DEPENDPATH += $$PWD/../../../../../MAVSDK/include
+INCLUDEPATH += $$PWD/win/MAVSDK/include
+DEPENDPATH += $$PWD/win/MAVSDK/include
 
-win32:!win32-g++: PRE_TARGETDEPS += $$PWD/../../../../../MAVSDK/lib/mavsdk.lib
-else:win32-g++: PRE_TARGETDEPS += $$PWD/../../../../../MAVSDK/lib/libmavsdk.a
+win32:!win32-g++: PRE_TARGETDEPS += $$PWD/win/MAVSDK/lib/mavsdk.lib
+else:win32-g++: PRE_TARGETDEPS += $$PWD/win/MAVSDK/lib/libmavsdk.a
