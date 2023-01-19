@@ -61,26 +61,6 @@ INCLUDEPATH += $$PWD/lib
 INCLUDEPATH += $$PWD/app
 INCLUDEPATH += $$PWD/app/exp
 
-# Since mavlink is coming with MAVSDK, we don't need that anymore
-#INCLUDEPATH += $$PWD/lib/c_library_v2_openhd
-# mavsdk - dirty
-# We have the include path 2 times here, aparently release and debug install to different paths
-
-#ifdef __linux__
-INCLUDEPATH += /usr/local/include/mavsdk
-LIBS += -L/usr/local/lib -lmavsdk
-INCLUDEPATH += /usr/include/mavsdk
-#elif _WIN32
-INCLUDEPATH += C:\MAVSDK\
-INCLUDEPATH += C:\MAVSDK\include
-LIBS += -LC:\MAVSDK\lib
-#else
-
-#endif
-
-
-
-
 # Avcodec decode and display, all sources
 # Replaced gstreamer for now
 # Comment the line below to build without avcodec (you won't have any video decoding capabilities in this case though)
