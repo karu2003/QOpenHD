@@ -271,6 +271,7 @@ static std::optional<ImprovedIntSetting> get_improved_for_int(const std::string&
         }
         {
             auto default_values=std::vector<ImprovedIntSetting::Item>{
+                {"3 disable",3},
                 {"2MBit/s",2},
                 {"4MBit/s",4},
                 {"6MBit/s",6},
